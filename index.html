@@ -10,13 +10,12 @@
       <h1>Book a Reservation</h1>
       <form method="POST">
         <div>
-          <label for="booking_time">Reservation Date & Time: </label>
-          <input
-            id="booking_time"
-            type="datetime-local"
-            name="booking_time"
-            required
-          />
+          <label for="booking_date">Reservation Date: </label>
+          <input id="booking_date" type="date" name="booking_date" required />
+        </div>
+        <div>
+          <label for="booking_time">Reservation Time: </label>
+          <input type="time" id="booking_time" name="booking_time" />
         </div>
         <div>
           <label for="booking_guests">Number of Guests: </label>
@@ -47,7 +46,10 @@
           <label for="email_confirm">Email Confirmation: </label>
           <input id="email_confirm" type="email" name="email_confirm" />
         </div>
-        <p>*To book for 7 or more guests, please call the restaurant:</p>
+        <p>
+          *To book for parties of 7 or more, please confirm availability with
+          the restaurant. For Denver: (719) 324-3478 or Boulder: (303) 449-2000;
+        </p>
       </form>
     </main>
   </body>
