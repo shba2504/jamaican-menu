@@ -25,14 +25,14 @@
             id="booking_guests"
             name="booking_guests"
             min="1"
-            max="10"
+            max="6"
             required
             oninput="this.nextElementSibling.value = this.value"
-          />
+          />*
         </div>
 
         <div>
-          <label for="booking_location">Specify a Location: </label>
+          <label for="booking_location">Select a Location: </label>
           <input
             id="booking_location"
             name="booking_location"
@@ -43,6 +43,11 @@
             <option value="Boulder"></option>
           </datalist>
         </div>
+        <div>
+          <label for="email_confirm">Email Confirmation: </label>
+          <input id="email_confirm" type="email" name="email_confirm" />
+        </div>
+        <p>*To book for 7 or more guests, please call the restaurant:</p>
       </form>
     </main>
   </body>
