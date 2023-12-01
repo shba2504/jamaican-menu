@@ -4,20 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Come Dine With Us</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <main>
-      <h1>Book a Reservation</h1>
+      <h1 class="text-center">Book a Reservation</h1>
       <form method="POST">
-        <div>
+        <div class="text-center">
           <label for="booking_date">Reservation Date: </label>
           <input id="booking_date" type="date" name="booking_date" required />
         </div>
-        <div>
+        <div class="text-center">
           <label for="booking_time">Reservation Time: </label>
           <input type="time" id="booking_time" name="booking_time" />
         </div>
-        <div>
+        <div class="text-center">
           <label for="booking_guests">Number of Guests: </label>
           <input
             type="number"
@@ -30,7 +36,7 @@
           />*
         </div>
 
-        <div>
+        <div class="text-center">
           <label for="booking_location">Select a Location: </label>
           <input
             id="booking_location"
@@ -42,12 +48,12 @@
             <option value="Boulder"></option>
           </datalist>
         </div>
-        <div>
+        <div class="text-center">
           <label for="email_confirm">Email Confirmation: </label>
           <input id="email_confirm" type="email" name="email_confirm" />
         </div>
         <button type="submit" name="submit">Book Now</button>
-        <p>
+        <p class="text-center">
           *To book for parties of 7 or more, please confirm availability with
           the restaurant. For Denver: (719) 324-3478 or Boulder: (303) 449-2000;
         </p>
