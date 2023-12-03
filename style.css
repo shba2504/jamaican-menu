@@ -1,3 +1,8 @@
-html {
+#navbar {
   background-color: black;
+}
+
+body {
+  background-color: black;
+  color: white;
 }
